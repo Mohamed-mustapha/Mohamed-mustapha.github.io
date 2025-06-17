@@ -1,34 +1,108 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Broker Egypt</title>
-
-  <!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon.png" />
-  <!-- أو لو كانت الأيقونة بصيغة PNG -->
-  <!-- <link rel="icon" href="favicon.png" type="image/png" /> -->
-
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f5f5f5;
+      color: #111;
       text-align: center;
-      font-family: Arial, sans-serif;
-      padding: 40px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    img.logo {
+      width: 150px;
+      margin-bottom: 1rem;
     }
     h1 {
-      margin-top: 20px;
-      color: #333;
+      color: #0057ff;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #0057ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    .buttons a:hover {
+      background-color: #003fcc;
+    }
+    form {
+      margin-top: 2rem;
+      text-align: right;
+    }
+    label, input, select {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    input, select {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <img src="coming-soon.png" alt="قريبًا">
-  <h1>الموقع قيد الإنشاء - AI Broker Egypt</h1>
+  <div class="container">
+    <img src="logo.png" alt="AI Broker Logo" class="logo">
+    <h1>مرحبًا بك في AI Broker – أول وكيل عقاري ذكي في مصر!</h1>
+    <p>
+      باستخدام الذكاء الاصطناعي، بنساعدك تلاقي الشقة اللي بتحلم بيها بأسرع وأسهل طريقة.<br>
+      ابدأ معانا من الشروق… وقريبًا في كل مكان في مصر!
+    </p>
+    <div class="buttons">
+      <a href="https://www.facebook.com/aibroker.eg" target="_blank">راسلنا على فيسبوك</a>
+      <a href="https://wa.me/201063648489" target="_blank">تواصل على واتساب</a>
+    </div>
+    <form>
+      <label for="name">الاسم</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">رقم الهاتف</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="city">المدينة المهتم بها</label>
+      <select id="city" name="city">
+        <option value="الشروق">الشروق</option>
+        <option value="القاهرة الجديدة">القاهرة الجديدة</option>
+        <option value="6 أكتوبر">6 أكتوبر</option>
+      </select>
+
+      <button type="submit">سجل اهتمامك</button>
+    </form>
+  </div>
 </body>
 </html>
